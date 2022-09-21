@@ -80,3 +80,8 @@ function theme_scripts_and_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_scripts_and_styles' );
+
+/**
+ * Include custom blocks handler.
+ */
+require_once get_template_directory() . '/blocks/functions-blocks.php';
