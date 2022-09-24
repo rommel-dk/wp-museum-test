@@ -24,6 +24,7 @@ define( 'THEME_TEXTDOMAIN', 'museum' );
 /**
  * Register supported features.
  */
+add_action( 'after_setup_theme', 'theme_register_supported_features' );
 function theme_register_supported_features() {
 
 	// Register theme translations.
@@ -64,11 +65,10 @@ function theme_register_supported_features() {
 	$GLOBALS['content_width'] = apply_filters( 'theme_content_width', 1024 );
 }
 
-add_action( 'after_setup_theme', 'theme_register_supported_features' );
-
 /**
  * Enqueue scripts and styles.
  */
+add_action( 'wp_enqueue_scripts', 'theme_scripts_and_styles' );
 function theme_scripts_and_styles() {
 
 	// Enqueue style reset and base stylesheet.
@@ -79,7 +79,24 @@ function theme_scripts_and_styles() {
 	//@TODO: Enqueue the JavaScript.
 }
 
-add_action( 'wp_enqueue_scripts', 'theme_scripts_and_styles' );
+add_action('wp_head', 'theme_fonts');
+function theme_fonts() {
+	?>
+
+	<style>
+		@font-face {
+			font-family: "Articulat CF v2";
+			src: url("<?= get_template_directory_uri(); ?>/assets/fonts/ArticulatCFv2-DemiBold.otf");
+		}
+		@font-face {
+			font-family: "Articulat CF v2";
+			src: url("<?= get_template_directory_uri(); ?>/assets/fonts/ArticulatCFv2-Bold.otf");
+			font-weight: 700;
+		}
+	</style>
+
+	<?php
+}
 
 /**
  * Include custom blocks handler.

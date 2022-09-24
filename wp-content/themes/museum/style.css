@@ -5,8 +5,12 @@
  * Text Domain: museum
  */
 
+body {
+    font-family: "Articulat CF v2";
+}
+
 h1 {
-    font-size: 80px;
+    font-size: 110px;
 }
 
 .block {
@@ -18,20 +22,45 @@ h1 {
 .block__layered-text {
     position: relative;
 }
-.layered-text__background {
 
-}
-.layered-text__overlay-content {
+.background__element {
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-bottom: 60px;
+    line-height: 0;
+}
+
+.background__bg {
+    z-index: -1;
+}
+
+.background__deco {
+    bottom: 110px;
+}
+
+.layered-text__overlay-content {
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 30px;
     padding-right: 116px;
     padding-left: 116px;
 }
+
+.layered-text__overlay-content h1 {
+    margin-bottom: 35px;
+    font-weight: 700;
+    line-height: .95;
+}
+
 .layered-text__overlay-content h1 span {
     position: relative;
     z-index: -1;
 }
+
 .layered-text__overlay-content p {
-    max-width: 400px;
+    max-width: 700px;
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 1.3;
 }
