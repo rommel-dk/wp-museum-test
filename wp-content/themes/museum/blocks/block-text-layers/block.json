@@ -1,0 +1,8 @@
+{
+    "apiVersion": 2,
+    "title": "Layered Text",
+    "name": "museum-blocks/layered-text",
+    "category": "layout",
+    "icon": "universal-access-alt",
+    "editorScript": "file:./block.js"
+}

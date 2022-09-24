@@ -74,7 +74,7 @@ function theme_scripts_and_styles() {
 	// Enqueue style reset and base stylesheet.
 	wp_enqueue_style( 'theme-reset', get_stylesheet_directory_uri() . '/assets/css/reset.css', [], wp_get_theme()->get( 'Version' ) );
 
-	//@TODO: Enqueue the style.
+	wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/style.css', [], wp_get_theme()->get( 'Version' ) );
 
 	//@TODO: Enqueue the JavaScript.
 }
