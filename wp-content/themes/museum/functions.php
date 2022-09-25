@@ -93,11 +93,23 @@ function theme_fonts() {
 		@font-face {
 			font-family: "Articulat CF v2";
 			src: url("<?= get_template_directory_uri(); ?>/assets/fonts/ArticulatCFv2-DemiBold.otf");
+			font-weight: 400;
 		}
 		@font-face {
 			font-family: "Articulat CF v2";
 			src: url("<?= get_template_directory_uri(); ?>/assets/fonts/ArticulatCFv2-Bold.otf");
 			font-weight: 700;
+		}
+
+		@font-face {
+			font-family: "Articulat CF";
+			src: url("<?= get_template_directory_uri(); ?>/assets/fonts/ArticulatCF-Medium.otf");
+			font-weight: 400;
+		}
+		@font-face {
+			font-family: "Articulat CF";
+			src: url("<?= get_template_directory_uri(); ?>/assets/fonts/ArticulatCF-ExtraBoldOblique.otf");
+			font-weight: 800;
 		}
 	</style>
 

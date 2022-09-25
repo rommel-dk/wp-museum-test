@@ -5,16 +5,23 @@
  * Text Domain: museum
  */
 
+:root {
+    --museum-font-size-big: 40px;
+    --museum-font-size-bigger: 110px;
+    --museum-font-size-biggest: 150px;
+    --museum-default-block-size: 1400px;
+}
+
 body {
     font-family: "Articulat CF v2";
 }
 
 h1 {
-    font-size: 110px;
+    font-size: var(--museum-font-size-bigger);
 }
 
 .block {
-    max-width: 1400px;
+    max-width: var(--museum-default-block-size);
     margin-left: auto;
     margin-right: auto;
 }
