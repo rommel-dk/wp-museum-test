@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "title": "API Grid",
+    "name": "museum-blocks/api-grid",
+    "category": "common",
+    "icon": "superhero-alt",
+    "style": "file:./block.css",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "api-grid.php"
+    }
+}

@@ -10,13 +10,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+define( 'MUSEUM_BLOCKS_DIR', __DIR__ );
+
 /**
  * Define our blocks.
  */
 function museum_defined_blocks() {
     $museum_blocks = array(
         // '\block-test',
-        '\block-text-layers',
+        '/block-text-layers',
+        '/block-api-grid',
     );
 
     $museum_blocks = apply_filters('museum_defined_blocks', $museum_blocks);
