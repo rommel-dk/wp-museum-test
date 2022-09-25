@@ -108,7 +108,7 @@ function theme_fonts() {
 		}
 		@font-face {
 			font-family: "Articulat CF";
-			src: url("<?= get_template_directory_uri(); ?>/assets/fonts/ArticulatCF-ExtraBoldOblique.otf");
+			src: url("<?= get_template_directory_uri(); ?>/assets/fonts/ArticulatCF-ExtraBold.otf");
 			font-weight: 800;
 		}
 	</style>

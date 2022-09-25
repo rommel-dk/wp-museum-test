@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "title": "Overlaying Images",
+    "name": "museum-blocks/block-overlaying-images",
+    "category": "common",
+    "icon": "superhero-alt",
+    "style": "file:./block.css",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-overlaying-images.php"
+    }
+}

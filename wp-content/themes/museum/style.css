@@ -7,6 +7,8 @@
 
 :root {
     --museum-font-size-big: 40px;
+    --museum-font-size-90: 90px;
+    --museum-font-size-100: 100px;
     --museum-font-size-bigger: 110px;
     --museum-font-size-biggest: 150px;
     --museum-default-block-size: 1400px;
@@ -14,6 +16,10 @@
 
 body {
     font-family: "Articulat CF v2";
+}
+
+em {
+    font-style: italic;
 }
 
 h1 {

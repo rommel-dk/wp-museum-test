@@ -20,6 +20,8 @@ function museum_defined_blocks() {
         // '\block-test',
         '/block-text-layers',
         '/block-api-grid',
+        '/block-extra-image-section',
+        '/block-overlaying-images',
     );
 
     $museum_blocks = apply_filters('museum_defined_blocks', $museum_blocks);

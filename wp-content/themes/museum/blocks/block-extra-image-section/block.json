@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "title": "Extra Image Section",
+    "name": "museum-blocks/extra-image-section",
+    "category": "common",
+    "icon": "superhero-alt",
+    "style": "file:./block.css",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "extra-image-section.php"
+    }
+}
