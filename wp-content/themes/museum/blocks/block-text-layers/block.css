@@ -17,12 +17,13 @@
 
 .layered-text__overlay-content {
     position: relative;
-    padding-top: 135px;
+    padding-top: 175px;
     padding-bottom: 30px;
     padding-right: 245px;
     padding-left: 245px;
 }
-.layered-text__overlay-content.text-size__bigger {
+.text-size__bigger .layered-text__overlay-content {
+    padding-top: 135px;
     padding-right: 116px;
     padding-left: 116px;
 }
