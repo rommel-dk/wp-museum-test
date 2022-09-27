@@ -38,7 +38,7 @@ if ($top_left_decoration) {
 }
 ?>
 
-<div class="block block__api-grid">
+<div class="block block__api-grid<?= esc_attr($class_name); ?>">
     <?php if (empty($data)) : ?>
         <p>- No data to show -</p>
     <?php else : ?>

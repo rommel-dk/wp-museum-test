@@ -21,7 +21,7 @@ $stylized_desc_bg = get_field('stylized_description_background');
 $stylized_desc_bg = $stylized_desc_bg ? ' style="background-image: url(\'' . $stylized_desc_bg['url'] . '\'"' : '';
 ?>
 
-<div class="block block__extra-image-section">
+<div class="block block__extra-image-section<?= esc_attr($class_name); ?>">
     <div class="extra-image-section__extra-image-section-inner">
         <?php if (!empty($background)) : ?>
             <div class="extra-image-section-inner__background-wrap">

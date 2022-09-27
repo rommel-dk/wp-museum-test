@@ -17,7 +17,6 @@ define( 'MUSEUM_BLOCKS_DIR', __DIR__ );
  */
 function museum_defined_blocks() {
     $museum_blocks = array(
-        // '\block-test',
         '/block-text-layers',
         '/block-api-grid',
         '/block-extra-image-section',

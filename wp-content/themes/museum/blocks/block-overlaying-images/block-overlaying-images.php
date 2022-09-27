@@ -24,12 +24,14 @@ $footer_description = get_field('footer_description');
 $footer_logo = get_field('footer_logo');
 $footer_bg_color = get_field('footer_background_color');
 
+$left_side_style_wrapper = '';
 $left_side_style = '';
 if (!empty($left_side_description_bg_color))
-    $left_side_style .= 'background-color:' . $left_side_description_bg_color . ';';
+    $left_side_style_wrapper .= 'background-color:' . $left_side_description_bg_color . ';';
 if (!empty($left_side_description_bg))
     $left_side_style .= 'background-image:url(\'' . $left_side_description_bg['url'] . '\');';
 
+$left_side_style_wrapper = $left_side_style_wrapper ? ' style="' . $left_side_style_wrapper . '"' : '';
 $left_side_style = $left_side_style ? ' style="' . $left_side_style . '"' : '';
 
 
@@ -40,7 +42,7 @@ if (!empty($footer_bg_color))
 $footer_style = $footer_style ? ' style="' . $footer_style . '"' : '';
 ?>
 
-<div class="block block__overlaying-images">
+<div class="block block__overlaying-images<?= esc_attr($class_name); ?>">
     <?php if (!empty($full_width_image)) : ?>
         <div class="overlaying-images__full-width-image">
             <?= wp_get_attachment_image($full_width_image['ID'], 'full'); ?>
@@ -48,14 +50,14 @@ $footer_style = $footer_style ? ' style="' . $footer_style . '"' : '';
     <?php endif; ?>
 
     <?php if (!empty($right_side_image)) : ?>
-        <div class="overlaying-images__right-side-image">
+        <div class="overlaying-images__right-side-image"<?= $left_side_style_wrapper; ?>>
             <?php if (!empty($left_side_description)) : ?>
                 <div class="right-side-image__left-side-description"<?= $left_side_style; ?>>
                     <?= $left_side_description; ?>
                 </div>
             <?php endif; ?>
 
-            <div class="right-side-image__image" style="margin-top: -<?= $right_side_image_overlay; ?>px">
+            <div class="right-side-image__image" style="--overlaying-images-top-distance: -<?= $right_side_image_overlay; ?>em">
                 <?= wp_get_attachment_image($right_side_image['ID'], 'full'); ?>
             </div>
         </div>

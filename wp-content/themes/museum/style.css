@@ -6,16 +6,43 @@
  */
 
 :root {
-    --museum-font-size-big: 40px;
-    --museum-font-size-90: 90px;
-    --museum-font-size-100: 100px;
-    --museum-font-size-bigger: 110px;
-    --museum-font-size-biggest: 150px;
-    --museum-default-block-size: 1400px;
+    --museum-font-size-13: 14px;
+    --museum-font-size-16: 14px;
+    --museum-font-size-18: 16px;
+    --museum-font-size-20: 16px;
+    --museum-font-size-24: 18px;
+    --museum-font-size-30: 20px;
+    --museum-font-size-40: 20px;
+    --museum-font-size-50: 30px;
+    --museum-font-size-90: 30px;
+    --museum-font-size-100: 30px;
+    --museum-font-size-110: 50px;
+    --museum-font-size-150: 50px;
+    --museum-default-block-size: 1024px;
+    --museum-wide-block-size: 1400px;
 }
 
+@media only screen and (min-width: 959px) {
+    :root {
+        --museum-font-size-13: 13px;
+        --museum-font-size-16: 16px;
+        --museum-font-size-18: 18px;
+        --museum-font-size-20: 20px;
+        --museum-font-size-24: 24px;
+        --museum-font-size-30: 30px;
+        --museum-font-size-40: 40px;
+        --museum-font-size-50: 50px;
+        --museum-font-size-90: 90px;
+        --museum-font-size-100: 100px;
+        --museum-font-size-110: 110px;
+        --museum-font-size-150: 150px;
+    }
+}
+
+html,
 body {
     font-family: "Articulat CF v2";
+    font-size: var(--museum-font-size-16);
 }
 
 em {
@@ -23,11 +50,32 @@ em {
 }
 
 h1 {
-    font-size: var(--museum-font-size-bigger);
+    font-size: var(--museum-font-size-110);
 }
 
 .block {
     max-width: var(--museum-default-block-size);
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
+}
+
+@media only screen and (min-width: 767px) {
+    .block {
+        padding: 0;
+    }
+}
+
+.block.alignwide {
+    max-width: var(--museum-wide-block-size);
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
