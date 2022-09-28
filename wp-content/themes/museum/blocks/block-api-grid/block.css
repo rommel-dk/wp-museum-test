@@ -36,6 +36,11 @@
     margin-top: 5px;
 }
 
+.api-grid__decoration {
+    display: block;
+    margin: 20px 0;
+}
+
 @media only screen and (min-width: 399px) {
     .api-grid__api-grid-elements {
         column-count: 2;
@@ -52,6 +57,10 @@
     .block__api-grid {
         position: relative;
     }
+
+    .api-grid__decoration {
+        margin: 0;
+    }
     
     .api-grid__decoration {
         position: absolute;
@@ -60,8 +69,6 @@
     }
     
     .api-grid__api-grid-elements {
-        --museum-font-size-30: 20px;
-
         column-count: 3;
         column-gap: 70px;
         padding: 0 60px;
@@ -77,9 +84,5 @@
     
     .api-grid-elements__api-element:nth-child(3) {
         padding-top: 154px;
-    }
-
-    .api-element__date {
-        --museum-font-size-16: 14px
     }
 }

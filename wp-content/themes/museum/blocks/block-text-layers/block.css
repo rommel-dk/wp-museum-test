@@ -15,14 +15,96 @@
     z-index: -1;
 }
 
+.layered-text__overlay-content {
+    position: relative;
+    padding-top: 60px;
+}
+
+.text-size__bigger p {
+    max-width: 420px;
+}
+
+.layered-text__overlay-content h1 strong,
+.layered-text__overlay-content h2 strong {
+    position: relative;
+    z-index: -1;
+}
+
+.background__deco {
+    bottom: 10px;
+}
+
+.background__bg {
+    top: 50px;
+}
+
+.text-size__bigger .background__deco {
+    bottom: 80px;
+}
+
+.text-size__bigger .background__bg {
+    top: 120px;
+}
+
+.layered-text__overlay-content h2 {
+    font-size: var(--museum-font-size-150);
+}
+
+.layered-text__overlay-content h3 {
+    font-size: var(--museum-font-size-40);
+    font-family: "Articulat CF";
+}
+    
+.layered-text__overlay-content h3 strong {
+    font-weight: 800;
+}
+
+.layered-text__overlay-content img {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.layered-text__overlay-content p {
+    max-width: 590px;
+    font-size: var(--museum-font-size-18);
+    font-family: 'Articulat CF';
+    line-height: 1.3;
+}
+
+.text-size__bigger p {
+    font-size: var(--museum-font-size-24);
+    font-family: 'Articulat CF v2';
+}
+
+.layered-text__overlay-content h1,
+.layered-text__overlay-content h2 {
+    margin-bottom: 10px;
+}
+
+.layered-text__overlay-content h3 {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 959px) {
+    .layered-text__overlay-content img {
+        width: 60px;
+    }
+}
+
 @media only screen and (min-width: 959px) {
-    .background__element {
+    .background__element,
+    .text-size__bigger .background__deco {
         bottom: var(--distance-from-bottom);
         margin-bottom: 60px;
     }
 
+    .background__bg,
+    .text-size__bigger .background__bg {
+        top: auto;
+    }
+
     .layered-text__overlay-content {
-        position: relative;
+        max-width: 100%;
         padding-top: 175px;
         padding-bottom: 30px;
         padding-right: 245px;
@@ -42,46 +124,22 @@
         line-height: .95;
     }
 
-    .layered-text__overlay-content h2 {
-        font-size: var(--museum-font-size-150);
-    }
-
     .layered-text__overlay-content h3 {
         margin-left: 35px;
         margin-bottom: 35px;
-        font-size: var(--museum-font-size-40);
-        font-family: "Articulat CF";
         letter-spacing: -1px;
         line-height: .9;
-    }
-    
-    .layered-text__overlay-content h3 strong {
-        font-weight: 800;
-    }
-
-    .layered-text__overlay-content h1 strong,
-    .layered-text__overlay-content h2 strong {
-        position: relative;
-        z-index: -1;
-    }
-
-    .layered-text__overlay-content p {
-        max-width: 590px;
-        margin-left: 30px;
-        font-size: var(--museum-font-size-18);
-        font-family: 'Articulat CF';
-        line-height: 1.3;
     }
 
     .text-size__bigger p {
         max-width: 700px;
         margin-left: 10px;
-        font-size: var(--museum-font-size-24);
-        font-family: 'Articulat CF v2';
     }
 
-    .layered-text__overlay-content img {
-        margin-left: 10px;
-        vertical-align: middle;
+    .layered-text__overlay-content p {
+        margin-left: 30px;
+    }
+    .text-size__bigger p {
+        margin-left: 0;
     }
 }
