@@ -31,7 +31,7 @@ if ( ! class_exists( 'MuseumExternalContent' ) ) {
 		/**
 		 * The data endpoint of external server
 		 */
-		public $data_endpoint = '/wp-content/uploads/data-grid.json';
+		public $data_endpoint = '/wp-content/plugins/museum-external-content/data-grid.json';
 
 		/**
 		 * The token endpoint of external server
