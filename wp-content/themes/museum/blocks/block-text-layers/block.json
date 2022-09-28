@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "title": "Layered Text",
+    "name": "museum-blocks/layered-text",
+    "category": "common",
+    "icon": "superhero-alt",
+    "style": "file:./block.css",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "layered-text.php"
+    }
+}
